@@ -93,6 +93,7 @@ button {
 .selected {
     color: var(--hover-color);
     border-width: 0px 0px 1px 0px; /* order is TRBL */
+    font-weight: bold;
 }
 
 @keyframes flicker {
@@ -169,7 +170,7 @@ img, video {
 
     border: solid;
     border-color: var(--default-color);
-    border-width: 0px 0px 1px 0px; /* order is TRBL */
+    border-width: 0px 0px 0px 0px; /* order is TRBL */
 }
 
 .carousel::-webkit-scrollbar {
@@ -258,31 +259,6 @@ img, video {
     border-width: 1px 1px 4px 1px; /* order is TRBL */
 }
 
-footer {
-    width: 100%;
-    bottom: 0px;
-    display: inline-block;
-    
-    border: solid;
-    border-color: var(--hover-color);
-    border-width: 1px 0px 0px 0px; /* order is TRBL */
-    
-    display: flex;
-    margin: 0px;
-    padding: 8px;
-    gap: 4px;
-    justify-content: center;
-    backdrop-filter: blur(4px);
-    background-color: rgba(1,1,1,0.2);
-    
-    border: solid;
-    border-color: var(--default-color);
-    border-width: 0px 0px 1px 0px; /* order is TRBL */
-    
-    align-items: center;
-    text-align: center;
-}
-
 audio {
     height: 32px;
 }
@@ -337,4 +313,86 @@ ul li:hover {
 
 .textblock {
     padding: 12px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+    background-color: rgba(1,1,1,0.5);
+    gap: 16px;
+    
+    border: solid;
+    border-color: var(--hover-color);
+    border-width: 1px 0px 0px 0px; /* order is TRBL */
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0px 0px 0px 0px; /* order is TRBL */
+    background: rgba(0,0,0,0);
+    align-items: center;
+    justify-content: center;
+}
+
+.contact select {
+    padding: 4px 8px 4px 8px; /* order is TRBL */
+    color: var(--hover-color);
+
+    border: solid;
+    border-color: var(--hover-color);
+    border-width: 0px 0px 0px 0px; /* order is TRBL */
+
+    background-color: var(--text-color);
+    cursor: pointer;
+}
+
+.contact input[type="text"] {
+    flex: 1;
+    min-width: 0;
+
+    padding: 4px 8px 4px 8px;
+    color: var(--hover-color);
+
+    border: solid;
+    border-color: var(--hover-color);
+    border-width: 0px 0px 1px 0px;
+
+    background-color: rgba(0,0,0,0);
+    outline: none;
+}
+
+.contact input[type="text"]:focus {
+    border-width: 0px 0px 4px 0px;
+}
+
+.contact input[type="submit"] {
+    padding: 0;
+    margin: 0;
+    width: 24px;
+    height: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    color: var(--hover-color);
+
+    border: solid;
+    border-color: var(--hover-color);
+    border-width: 1px;
+
+    background-color: rgba(0,0,0,0);
+    transition: 0.05s;
+}
+
+.contact input[type="submit"]:hover {
+    color: var(--hover-color);
+
+    border: solid;
+    border-color: var(--hover-color);
+    border-width: 1px 1px 4px 1px; /* order is TRBL */
 }

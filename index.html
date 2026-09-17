@@ -5,25 +5,52 @@
         <link rel="stylesheet" href="styles/styles.css">
     </head>
     <body>
+        <a id="top"></a>
         <!-- NAV BAR -->
         <div class="nav-bar">
-            <form action="index.html">
-                <button class="selected" type="submit"><b>HOME</b></button>
-            </form>
-            -
-            <form action="projects.html">
-                <button type="submit">PROJECTS</button>
-            </form>
+            <div class="nav-left">
+                <form action="index.html">
+                    <button class="selected" type="submit">HOME</button>
+                </form>
+                -
+                <form action="projects.html">
+                    <button type="submit">PROJECTS</button>
+                </form>
+            </div>
+
+            <div class="nav-right">
+                <form action="#top">
+                    <button class="page-nav" type="submit"><b>&uarr;</b></button>
+                </form>
+                -
+                <form action="#aboutme">
+                    <button class="page-nav" type="submit">ABOUT ME</button>
+                </form>
+                -
+                <form action="#interests">
+                    <button class="page-nav" type="submit">INTERESTS</button>
+                </form>
+                -
+                <form action="#dog">
+                    <button class="page-nav" type="submit">DOG</button>
+                </form>
+                -
+                <form action="#bottom">
+                    <button class="page-nav" type="submit"><b>&darr;</b></button>
+                </form>
+            </div>
         </div>
         <!-- NAV BAR END -->
 
+        <a id="aboutme"></a>
         <div class="content">
             <div class="information-card">
                 <div class="profile-info">
                     <h3>ID120 - Bachelor of Science in Information Technology</h3>
                     <div class="textblock">
                         <h1>AUSTIN B. LAGOS</h1>
-                        March 08, 2000
+                        March 08, 2000<br/>
+                        Age: 26
                     </div>
 
                     <p>
@@ -34,9 +61,11 @@
                 </div>
 
                 <div class="profile-picture">
-                    <img src="https://dlsu.instructure.com/images/thumbnails/18946808/vdfXeKOmpEzK7lhWnkS1tsMAg30iiAbY5ODBqwZP" width="360" height="360">
+                    <img src="https://dlsu.instructure.com/images/thumbnails/18946808/vdfXeKOmpEzK7lhWnkS1tsMAg30iiAbY5ODBqwZP" width="260">
                 </div>
             </div>
+
+            <a id="interests"></a>
             <div class="header-bar">
                 <h3>INTERESTS</h3>
 
@@ -61,6 +90,9 @@
                             <a href="https://www.minecraft.net/en-us" target="_blank">
                                 <img src="media/aboutme/mc.jpg" height="128">
                             </a>
+                            <audio class="game-ost" controls>
+                                <source src="media/aboutme/mc_haggstrom.mp3" type="audio/mpeg">
+                            </audio>
                             Minecraft
                         </div>
 
@@ -68,6 +100,9 @@
                             <a href="https://www.roblox.com/home" target="_blank">
                                 <img src="media/aboutme/rbx.jpg" height="128">
                             </a>
+                            <audio class="game-ost" controls>
+                                <source src="media/aboutme/rbx_oof.mp3" type="audio/mpeg">
+                            </audio>
                             Roblox
                         </div>
 
@@ -75,6 +110,9 @@
                             <a href="https://www.arknights.global/" target="_blank">
                                 <img src="media/aboutme/ak.jpg" height="128">
                             </a>
+                            <audio class="game-ost" controls>
+                                <source src="media/aboutme/ak_lifeflow.ogg" type="audio/ogg">
+                            </audio>
                             Arknights
                         </div>
 
@@ -82,6 +120,9 @@
                             <a href="https://honkaiimpact3.hoyoverse.com/global/en-us/fab" target="_blank">
                                 <img src="media/aboutme/hi3.jpg" height="128">
                             </a>
+                            <audio class="game-ost" controls>
+                                <source src="media/aboutme/hi3_gion2.mp3" type="audio/mpeg">
+                            </audio>
                             Honkai Impact 3rd
                         </div>
 
@@ -89,6 +130,9 @@
                             <a href="https://gf.sunborngame.com/" target="_blank">
                                 <img src="media/aboutme/gfl1.jpg" height="128">
                             </a>
+                            <audio class="game-ost" controls>
+                                <source src="media/aboutme/gfl1_day1.ogg" type="audio/ogg">
+                            </audio>
                             Girl's Frontline 1
                         </div>
 
@@ -97,13 +141,14 @@
                                 <img src="media/aboutme/gfl2.jpg" height="128">
                             </a>
                             <audio class="game-ost" controls>
-                                <source src="media/" type="audio/mpeg">
+                                <source src="media/aboutme/glf2_sojourn.ogg" type="audio/ogg">
                             </audio>
                             Girl's Frontline 2
                         </div>
                     </div>
             </ul>
             
+            <a id="dog"></a>
             <div class="header-bar">
                 <h3>MY DOG (LULU)</h3>
                 
@@ -123,35 +168,24 @@
     </body>
 
     <footer>
-        <div class="footer-left">
-            <h3>Contact Information</h3>
-            <ul>
-                <li>
-                    <img src="media/contact/gmail.png" width="16" length="16"/> Personal - austinlagos19@gmail.com
-                </li>
-                <li>
-                <img src="media/contact/gmail.png" width="16" length="16"/> DLSU - austin_lagos@dlsu.edu.ph
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/auslag"><img src="media/contact/fb.png" width="16" length="16"/> Facebook</a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/lagaustin"><img src="media/contact/ig.png" width="16" length="16"/> Instagram</a>
-                </li>
-                <br/>
-            </ul>
+        <div class="header-bar">
+            <h3>SOCIAL MEDIA</h3>
+            <div class="contact">
+                <a href="https://www.facebook.com/auslag"><img src="media/contact/fb.png" width="24"/></a>
+                <a href="https://www.instagram.com/lagaustin"><img src="media/contact/ig.png" width="24"/></a>
+            </div>
         </div>
 
-        <div class="footer-right">
-            <h3>Ask me anything!</h3>
-            <form>
-                Send to my
+        <div class="header-bar">
+            <h3>ASK ME ANYTHING</h3>
+            <form class="contact">
+                SEND TO MY
                 <select name="email" id="email">
-                    <option value="personal">Personal Email</option>
-                    <option value="dlsu">DLSU Email</option>
+                    <option value="personal">PERSONAL EMAIL</option>
+                    <option value="personal">SCHOOL EMAIL</option>
                 </select>
                 <input type="text" id="question" name="question">
-                <input type="submit" value="Send">
+                <input type="submit" value="&checkmark;">
             </form>
         </div>
     </footer>
