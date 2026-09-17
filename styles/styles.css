@@ -23,6 +23,7 @@ html, body {
     background: url("../media/aboutme/dog_03.jpg");
     margin: 0;
     padding: 0;
+    color: var(--default-color);
 }
 
 .nav-bar{
@@ -41,8 +42,15 @@ html, body {
     border-width: 0px 0px 1px 0px; /* order is TRBL */
 }
 
-.sub-nav{
+.nav-left, .nav-right{
+    display: flex;
+    gap: 4px;
+}
+
+.nav-right{
+    justify-content: right;
     margin-left: auto;
+    gap: 2px;
 }
 
 button {
@@ -55,11 +63,18 @@ button {
   font-size: 16px;
   cursor: pointer;
   color: var(--default-color);
-  border-color: var(--hover-color);
+  
   border: solid;
+  border-color: var(--hover-color);
   border-width: 0px 0px 0px 0px; /* order is TRBL */
+
   background-color: rgba(0,0,0,0);
   transition: 0.05s;
+}
+
+.selected {
+  color: var(--hover-color);
+  border-width: 0px 0px 1px 0px; /* order is TRBL */
 }
 
 @keyframes flicker {
@@ -71,12 +86,20 @@ button {
     80% { opacity: 0.6; }
 }
 
-button:hover {
+button:hover:not(.page-nav) {
   color: var(--hover-color);
   border-color: var(--hover-color);
   box-shadow: 0 0 8px var(--hover-color);
   backdrop-filter: blur(6px);
-  border-width: 0px 0px 0px 6px; /* order is TRBL */
+  
+  border: solid;
+  border-color: var(--hover-color);
+  border-width: 1px 1px 1px 6px; /* order is TRBL */
   background-color: rgba(0,0,0,0.4);
   animation: flicker 0.3s;
+}
+
+button.page-nav:hover {
+  color: var(--hover-color);
+  border-color: var(--hover-color);
 }

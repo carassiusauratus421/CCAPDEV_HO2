@@ -6,26 +6,41 @@
     </head>
 
     <body>
+        <a id="top"></a>
         <!-- NAV BAR -->
         <div class="nav-bar">
-            <form action="index.html">
-                <button type="submit">HOME</button>
-            </form>
-            <form action="projects.html">
-                <button type="submit"><b>PROJECTS</b></button>
-            </form>
-            <div class="sub-nav">
-                <form id="current-page" action="index.html">
+            <div class="nav-left">
+                <form action="index.html">
                     <button type="submit">HOME</button>
                 </form>
                 <form action="projects.html">
-                    <button type="submit"><b>PROJECTS</b></button>
+                    <button class="selected" type="submit"><b>PROJECTS</b></button>
+                </form>
+            </div>
+
+            <div class="nav-right">
+                <form action="#top">
+                    <button class="page-nav" type="submit">+</button>
+                </form>
+                <form action="#top">
+                    <button class="page-nav" type="submit">HANDICRAFTS</button>
+                </form>
+                <form action="#top">
+                    <button class="page-nav" type="submit">GAME DEV</button>
+                </form>
+                <form action="#top">
+                    <button class="page-nav" type="submit">ANIMATIONS</button>
+                </form>
+                <form action="#top">
+                    <button class="page-nav" type="submit">MODELS</button>
+                </form>
+                <form action="#bottom">
+                    <button class="page-nav" type="submit">-</button>
                 </form>
             </div>
         </div>
         <!-- NAV BAR END -->
 
-        <a id="top"></a>
         <h1>Personal Projects</h1>
         <p>Feel free to rate my projects.</p>
         <hr/>
@@ -171,5 +186,6 @@
         </form>
         <br/> <a href="#top">Back to the top.</a>
         <hr/>
+        <a id="bottom"></a>
     </body>
 </html>
