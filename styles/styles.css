@@ -20,10 +20,12 @@
 }
 
 html, body {
-    background: url("../media/aboutme/dog_03.jpg");
+    background-color: rgba(0,0,0,1);
+    background-image: url("../media/grid.png");
     margin: 0;
     padding: 0;
     color: var(--default-color);
+    text-shadow: 4px 4px 4px rgba(0,0,0,0.6);
 }
 
 .nav-bar{
@@ -105,16 +107,32 @@ button.page-nav:hover {
 }
 
 img {
-  box-shadow: 0 0 8px rgba(0,0,0,1);
+  box-shadow: 0 0 12px rgba(0,0,0,1);
+}
+
+.content {
+    padding: 12px;
 }
 
 .carousel{
     display: flex;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
     gap: 12px;
+    padding: 12px;
 }
 
-.carousel-slide{
-    scroll-snap-align: start;
+.carousel::-webkit-scrollbar {
+    height: 8px;
+}
+
+.carousel::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.carousel::-webkit-scrollbar-thumb {
+    background: var(--default-color);
+}
+
+.carousel::-webkit-scrollbar-thumb:hover {
+    background: var(--hover-color);
 }
