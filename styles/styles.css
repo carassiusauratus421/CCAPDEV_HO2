@@ -19,14 +19,47 @@
     font-family: "Montserrat", sans-serif;
 }
 
-body {
+html, body {
     background: url("../media/aboutme/dog_03.jpg");
+    margin: 0;
+    padding: 0;
 }
 
 .nav-bar{
     display: flex;
+    margin: 0px;
+    padding: 8px;
     gap: 4px;
-    justify-content: center;
+    justify-content: left;
+    backdrop-filter: blur(4px);
+    position: sticky;
+    top: 0px;
+    z-index: 9999;
+    
+    border: solid;
+    border-color: var(--default-color);
+    border-width: 0px 0px 1px 0px; /* order is TRBL */
+}
+
+.sub-nav{
+    margin-left: auto;
+}
+
+button {
+  border: none;
+  padding: 12px;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  color: var(--default-color);
+  border-color: var(--hover-color);
+  border: solid;
+  border-width: 0px 0px 0px 0px; /* order is TRBL */
+  background-color: rgba(0,0,0,0);
+  transition: 0.05s;
 }
 
 @keyframes flicker {
@@ -37,28 +70,13 @@ body {
     65% { opacity: 0.9; }
     80% { opacity: 0.6; }
 }
-button {
-  border: none;
-  padding: 12px;
-  margin: 0;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-  background: transparent;
-  color: var(--default-color);
-  border-color: var(--default-color);
-  border: solid;
-  border-width: 1px 1px 1px 1px; /* order is TRBL */
-  transition: 0.1s cubic-bezier(0.2, 0.8, 0.2, 1);
-}
 
 button:hover {
   color: var(--hover-color);
   border-color: var(--hover-color);
   box-shadow: 0 0 8px var(--hover-color);
-  backdrop-filter: blur(5px);
-  border-width: 1px 1px 1px 6px; /* order is TRBL */
+  backdrop-filter: blur(6px);
+  border-width: 0px 0px 0px 6px; /* order is TRBL */
+  background-color: rgba(0,0,0,0.4);
   animation: flicker 0.3s;
 }

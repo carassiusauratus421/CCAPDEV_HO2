@@ -6,12 +6,26 @@
     </head>
 
     <body>
-        <a id="top"></a>
         <!-- NAV BAR -->
-         | <a href="index.html">Home</a> | 
-        <a href="projects.html">Projects</a> |
-        <hr/>
+        <div class="nav-bar">
+            <form action="index.html">
+                <button type="submit">HOME</button>
+            </form>
+            <form action="projects.html">
+                <button type="submit"><b>PROJECTS</b></button>
+            </form>
+            <div class="sub-nav">
+                <form id="current-page" action="index.html">
+                    <button type="submit">HOME</button>
+                </form>
+                <form action="projects.html">
+                    <button type="submit"><b>PROJECTS</b></button>
+                </form>
+            </div>
+        </div>
         <!-- NAV BAR END -->
+
+        <a id="top"></a>
         <h1>Personal Projects</h1>
         <p>Feel free to rate my projects.</p>
         <hr/>
