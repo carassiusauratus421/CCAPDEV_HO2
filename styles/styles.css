@@ -173,7 +173,7 @@ img, video {
     display: flex;
     align-items: center;
     gap: 12px;
-    padding: 0px 0px 0px 40px; /* order is TRBL */
+    padding: 0px 0px 0px 0px; /* order is TRBL */
     background: rgba(0,0,0,0);
 }
 
