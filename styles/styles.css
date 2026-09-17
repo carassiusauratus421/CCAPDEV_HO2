@@ -23,13 +23,24 @@ body {
     background: url("../media/aboutme/dog_03.jpg");
 }
 
-.nav-button{
-    display: inline-block;
+.nav-bar{
+    display: flex;
+    gap: 4px;
+    justify-content: center;
 }
 
+@keyframes flicker {
+    0%, 100% { opacity: 1; }
+    20% { opacity: 0.5; }
+    35% { opacity: 1; }
+    50% { opacity: 0.5; }
+    65% { opacity: 0.9; }
+    80% { opacity: 0.6; }
+}
 button {
   border: none;
   padding: 12px;
+  margin: 0;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -37,15 +48,17 @@ button {
   cursor: pointer;
   background: transparent;
   color: var(--default-color);
-  outline-color: var(--default-color);
-  outline: solid;
-  outline-width: 1px;
-  transition: 0.1s;
+  border-color: var(--default-color);
+  border: solid;
+  border-width: 1px 1px 1px 1px; /* order is TRBL */
+  transition: 0.1s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 button:hover {
   color: var(--hover-color);
-  outline-color: var(--hover-color);
+  border-color: var(--hover-color);
   box-shadow: 0 0 8px var(--hover-color);
   backdrop-filter: blur(5px);
+  border-width: 1px 1px 1px 6px; /* order is TRBL */
+  animation: flicker 0.3s;
 }
