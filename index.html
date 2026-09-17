@@ -10,38 +10,59 @@
             <form action="index.html">
                 <button class="selected" type="submit"><b>HOME</b></button>
             </form>
+            -
             <form action="projects.html">
                 <button type="submit">PROJECTS</button>
             </form>
         </div>
         <!-- NAV BAR END -->
 
-        <div class="content">    <table>
-                <tr>
-                    <td rowspan="3">
-                        <img class="round" src="https://dlsu.instructure.com/images/thumbnails/18946808/vdfXeKOmpEzK7lhWnkS1tsMAg30iiAbY5ODBqwZP" alt="profile picture" width="180" height="180">
-                    </td>
-                    <td>
-                        <h3>&nbsp; ID120<br/>&nbsp; Bachelor of Science in Information Technology</h3>
-                        <h1>&nbsp;Austin B. Lagos</h1>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        &nbsp; March 08, 2000
-                    </td>
-                </tr>
-            </table>
+        <div class="content">
+            <div class="information-card">
+                <div class="profile">
+                    <div class="profile-picture">
+                        <img class="round" src="https://dlsu.instructure.com/images/thumbnails/18946808/vdfXeKOmpEzK7lhWnkS1tsMAg30iiAbY5ODBqwZP"
+                            alt="profile picture"
+                            width="180"
+                            height="180">
+                    </div>
 
-            <h2>About Me</h2>
+                    <div class="profile-info">
+                        <h3>ID120<br> Bachelor of Science in Information Technology</h3>
+                        <h1>name</h1>
+                        <div>March 08, 2000</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-bar">
+                <h3>ABOUT ME</h3>
+            </div>
+
             <p>
                 I am currently an undergraduate BSIT student from DLSU<br/>
                 looking to gain experience and improve my skills in the<br/>
                 field of information technology. 
             </p>
 
-            <h2>Interests</h2>
+            <div class="header-bar">
+                <h3>INTERESTS</h3>
+
+                <form action="projects.html">
+                    <button class="page-nav" type="submit">// CHECK OUT MY PROJECTS //</button>
+                </form>
+            </div>
             <ul>
+                <li>Game Development</li>
+                <li>3D Modelling</li>
+                <li>3D Animation</li>
+                <li>Welding</li>
+                <li>Jewelry Making</li>
+                <li>Woodworking</li>
+                <li>Electronics Projects</li>
+                <li>Swimming</li>
+                <li>Sewing</li>
+
                 <li>Video Games
                     <table cellpadding="10">
                         <tr>
@@ -61,30 +82,29 @@
                         </tr>
                     </table>
                 </li>
-                <li>Game Development</li>
-                <li>3D Modelling</li>
-                <li>3D Animation</li>
-                <li>Welding</li>
-                <li>Jewelry Making</li>
-                <li>Woodworking</li>
-                <li>Electronics Projects</li>
-                <li>Swimming</li>
-                <li>Sewing</li>
             </ul>
-            <a href="projects.html">Check out my projects!</a>
             
-            <h2>My Dog (Lulu)</h2>
-            <audio controls>
-                <source src="media/aboutme/dog.mp3" type="audio/mpeg">
-            </audio>
-            <br/><br/>
-            <img src="media/aboutme/dog_01.jpg" height="240">
-            <img src="media/aboutme/dog_02.jpg" height="240">
-            <img src="media/aboutme/dog_03.jpg" height="240">
-            <img src="media/aboutme/dog_04.jpg" height="240">
-            <img src="media/aboutme/dog_05.jpg" height="240">
+            <div class="header-bar">
+                <h3>MY DOG (LULU)</h3>
+                
+                <audio controls>
+                    <source src="media/aboutme/dog.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            
+            <div class="carousel">
+                <img src="media/aboutme/dog_01.jpg" height="320">
+                <img src="media/aboutme/dog_02.jpg" height="320">
+                <img src="media/aboutme/dog_03.jpg" height="320">
+                <img src="media/aboutme/dog_04.jpg" height="320">
+                <img src="media/aboutme/dog_05.jpg" height="320">
+            </div>
+        </div>
+    </body>
 
-            <h2>Contact Information</h2>
+    <footer>
+        <div class="footer-left">
+            <h3>Contact Information</h3>
             <ul>
                 <li>
                     <img src="media/contact/gmail.png" width="16" length="16"/> Personal - austinlagos19@gmail.com
@@ -100,9 +120,10 @@
                 </li>
                 <br/>
             </ul>
-            <hr/>
+        </div>
 
-            <h2>Ask me anything!</h2>
+        <div class="footer-right">
+            <h3>Ask me anything!</h3>
             <form>
                 Send to my
                 <select name="email" id="email">
@@ -113,5 +134,5 @@
                 <input type="submit" value="Send">
             </form>
         </div>
-    </body>
+    </footer>
 </html>

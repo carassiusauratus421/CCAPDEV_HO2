@@ -22,7 +22,7 @@
 
 html, body {
     /* background-image: url("../media/aboutme/dog_03.jpg"); */
-    background-image: url("../media/akewebload-d.jpg");
+    background-image: url("../media/bg.jpg");
     margin: 0;
     padding: 0;
     color: var(--default-color);
@@ -44,11 +44,18 @@ html, body {
     border: solid;
     border-color: var(--default-color);
     border-width: 0px 0px 1px 0px; /* order is TRBL */
+    
+    align-items: center;
+    text-align: center;
 }
 
 .nav-left, .nav-right{
     display: flex;
     gap: 8px;
+    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .nav-right{
@@ -133,12 +140,13 @@ button.page-nav:hover {
     border-color: var(--hover-color);
 }
 
-img, video {
-    box-shadow: 0 0 12px rgba(0,0,0,1);
+button.page-nav-alt:hover {
+    color: var(--hover-color);
+    border-color: var(--hover-color);
 }
 
-.round {
-    border-radius: 0% 0% 0% 0%; /*format is TL RE BR BL*/
+img, video {
+    box-shadow: 0 0 12px rgba(0,0,0,1);
 }
 
 .content {
@@ -211,24 +219,21 @@ img, video {
 }
 
 .rating-form input[type="submit"] {
+    padding: 0;
+    margin: 0;
     width: 24px;
     height: 24px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    color: var(--hover-color);
 
     border: solid;
     border-color: var(--hover-color);
     border-width: 1px;
-
-    padding: 0;
-    margin: 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
-    cursor: pointer;
-    color: var(--hover-color);
 
     background-color: rgba(0,0,0,0);
     transition: 0.05s;
@@ -240,4 +245,46 @@ img, video {
     border: solid;
     border-color: var(--hover-color);
     border-width: 1px 1px 4px 1px; /* order is TRBL */
+}
+
+footer {
+    width: 100%;
+    bottom: 0px;
+    display: inline-block;
+    
+    border: solid;
+    border-color: var(--hover-color);
+    border-width: 1px 0px 0px 0px; /* order is TRBL */
+    
+    display: flex;
+    margin: 0px;
+    padding: 8px;
+    gap: 4px;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+    background-color: rgba(1,1,1,0.2);
+    
+    border: solid;
+    border-color: var(--default-color);
+    border-width: 0px 0px 1px 0px; /* order is TRBL */
+    
+    align-items: center;
+    text-align: center;
+}
+
+audio {
+    height: 32px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    padding: 8px 0px 8px 0px; /* order is TRBL */
+    margin: 8px 0px 8px 0px; /* order is TRBL */
+}
+
+ul li:hover {
+    color: var(--hover-color);
 }
