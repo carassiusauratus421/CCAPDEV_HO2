@@ -60,7 +60,7 @@ html, body {
 .header-bar{
     display: flex;
     justify-content: left;
-    justify-content: left;
+    align-items: center;
     gap: 4px;
 }
 
@@ -167,4 +167,77 @@ img, video {
 
 .carousel::-webkit-scrollbar-thumb:hover {
     background: var(--hover-color);
+}
+
+.rating-form {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0px 0px 0px 40px; /* order is TRBL */
+    background: rgba(0,0,0,0);
+}
+
+.rating-options {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.rating-options input[type="radio"] {
+    display: none;
+}
+
+.rating-options label {
+    cursor: pointer;
+    padding: 4px 8px 4px 8px; /* order is TRBL */
+    color: var(--hover-color);
+}
+
+.rating-options label:hover {
+    color: var(--hover-color);
+
+    border: solid;
+    border-color: var(--hover-color);
+    border-width: 0px 0px 1px 0px; /* order is TRBL */
+}
+
+.rating-options input[type="radio"]:checked + label {
+    color: var(--hover-color);
+    font-weight: bold;
+
+    border: solid;
+    border-color: var(--hover-color);
+    border-width: 0px 0px 4px 0px; /* order is TRBL */
+}
+
+.rating-form input[type="submit"] {
+    width: 24px;
+    height: 24px;
+    font-weight: bold;
+
+    border: solid;
+    border-color: var(--hover-color);
+    border-width: 1px;
+
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    cursor: pointer;
+    color: var(--hover-color);
+
+    background-color: rgba(0,0,0,0);
+    transition: 0.05s;
+}
+
+.rating-form input[type="submit"]:hover {
+    color: var(--hover-color);
+
+    border: solid;
+    border-color: var(--hover-color);
+    border-width: 1px 1px 4px 1px; /* order is TRBL */
 }
